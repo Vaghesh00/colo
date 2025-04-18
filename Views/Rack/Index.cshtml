@@ -1,0 +1,32 @@
+@model List<ColoWebApp.Models.Rack>
+
+<h2>Rack Management</h2>
+<a href="/Rack/Add">Add New Rack</a>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Rack Name</th>
+            <th>Capacity</th>
+            <th>Used Space</th>
+            <th>Available Space</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rack in Model)
+        {
+            <tr>
+                <td>@rack.Id</td>
+                <td>@rack.RackName</td>
+                <td>@rack.Capacity</td>
+                <td>@rack.UsedSpace</td>
+                <td>@(rack.Capacity - rack.UsedSpace)</td>
+                <td>
+                    <a href="/Rack/Edit/@rack.Id">Edit</a> |
+                    <a href="/Rack/Delete/@rack.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

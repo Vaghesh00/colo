@@ -1,0 +1,43 @@
+@model List<ColoWebApp.Models.Report>
+
+<h2>Monthly Usage and Billing Reports</h2>
+
+<!-- Add a button to generate reports -->
+<form asp-action="GenerateReports" method="post">
+    <button type="submit" class="btn btn-primary">Generate Report</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Client ID</th>
+            <th>Client Name</th>
+            <th>Rack ID</th>
+            <th>Rack Usage</th>
+            <th>Monthly Charge</th>
+            <th>Report Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+            foreach (var report in Model)
+            {
+                <tr>
+                    <td>@report.ClientId</td>
+                    <td>@report.ClientName</td>
+                    <td>@report.RackId</td>
+                    <td>@report.RackUsage</td>
+                    <td>@report.MonthlyCharge.ToString("C")</td>
+                    <td>@report.ReportDate.ToShortDateString()</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">No reports available. Click "Generate Report" to create new reports.</td>
+            </tr>
+        }
+    </tbody>
+</table>

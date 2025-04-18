@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "SaLVeebeSzGWjHlF7m3CeDHfpn0i0YM+Tw9By9F4q+I=",
+  "Source": "ColoWebApp",
+  "BasePath": "_content/ColoWebApp",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ColoWebApp\\wwwroot",
+      "Source": "ColoWebApp",
+      "ContentRoot": "C:\\Users\\vaghesh.jadav\\ColoWebApp\\wwwroot\\",
+      "BasePath": "_content/ColoWebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\vaghesh.jadav\\ColoWebApp\\wwwroot\\css\\site.css",
+      "SourceId": "ColoWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vaghesh.jadav\\ColoWebApp\\wwwroot\\",
+      "BasePath": "_content/ColoWebApp",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+@model List<ColoWebApp.Models.Client>
+
+<h2>Client List</h2>
+<a href="/Client/Add">Add New Client</a>
+<table>
+    <thead>
+        <tr><th>ID</th><th>Name</th><th>Rack</th><th>Contact</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model)
+        {
+            <tr>
+                <td>@client.Id</td>
+                <td>@client.Name</td>
+                <td>@client.RackNumber</td>
+                <td>@client.Contact</td>
+            </tr>
+        }
+    </tbody>
+</table>

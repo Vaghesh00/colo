@@ -1,0 +1,5 @@
+C:\Users\vaghesh.jadav\ColoWebApp\publish\ColoWebApp.exe
+C:\Users\vaghesh.jadav\ColoWebApp\publish\ColoWebApp.dll
+C:\Users\vaghesh.jadav\ColoWebApp\publish\ColoWebApp.deps.json
+C:\Users\vaghesh.jadav\ColoWebApp\publish\ColoWebApp.runtimeconfig.json
+C:\Users\vaghesh.jadav\ColoWebApp\publish\ColoWebApp.pdb

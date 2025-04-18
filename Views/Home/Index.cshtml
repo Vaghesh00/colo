@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard">
+    <h1>Colocation Management Dashboard</h1>
+    <p>Welcome to the centralized system for managing colocation clients, racks, and usage stats.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Client Records</h2>
+            <p>View and manage client information and rack assignments.</p>
+            <a href="/Client" class="button">Manage Clients</a>
+        </div>
+        <div class="card">
+            <h2>Rack Utilization</h2>
+            <p>Monitor and allocate rack space effectively.</p>
+            <a href="/Rack" class="button">View Racks</a>
+        </div>
+        <div class="card">
+            <h2>Reports</h2>
+            <p>Generate monthly usage and billing reports.</p>
+            <a href="/Report" class="button">Generate Report</a>
+        </div>
+    </div>
+</div>

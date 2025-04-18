@@ -1,0 +1,18 @@
+@model ColoWebApp.Models.Client
+
+<h2>Add Client</h2>
+<form asp-action="Add" method="post">
+    <div>
+        <label>Name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Rack Number:</label>
+        <input asp-for="RackNumber" />
+    </div>
+    <div>
+        <label>Contact:</label>
+        <input asp-for="Contact" />
+    </div>
+    <button type="submit">Submit</button>
+</form>

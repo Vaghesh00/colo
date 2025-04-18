@@ -1,0 +1,14 @@
+@model ColoWebApp.Models.Rack
+
+<h2>Add Rack</h2>
+<form asp-action="Add" method="post">
+    <div>
+        <label>Rack Name:</label>
+        <input asp-for="RackName" />
+    </div>
+    <div>
+        <label>Capacity:</label>
+        <input asp-for="Capacity" type="number" />
+    </div>
+    <button type="submit">Submit</button>
+</form>
